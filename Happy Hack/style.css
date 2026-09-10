@@ -203,6 +203,10 @@
     background-color:#76f8fd ;
 }
 
+
+.images{
+    height:500px;
+}
 .slide-items{
     width:100%;
     display:flex;

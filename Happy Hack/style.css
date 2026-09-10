@@ -1,0 +1,244 @@
+@font-face{
+    font-family:'Futura-Bol';
+    src:url('fonts/Futura-Bol.ttf')
+}
+@font-face{
+    font-family:'Futura-Boo';
+    src:url('fonts/Futura-Boo.ttf');
+}
+@font-face {
+    font-family: 'Futura-BooObl';
+    src: url(fonts/Futura-BooObl.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+.navigation{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 0;
+    background:transparent;
+    padding:30px 50px;
+}
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    list-style: none;
+    gap: 30px;
+    margin-top: 10px;
+    padding: 0;    
+}
+
+.navigation a{
+    color:#fff;
+    font-size:20px;
+    text-decoration: none;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    max-width:1200px;
+    padding:50px;
+    margin:0 auto;
+    
+}
+
+.firstview{
+    width:100vw;
+    height:100vh;
+    background-image:url(images/background1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.firstview-img{
+    width:84%;
+    padding-top:21%;
+
+}
+
+.firstview p{
+    font-size: 40px;
+    color: #ffffff;
+    padding-top: 25px;
+    font-family: 'Futura-BooObl',sans-serif;
+}
+
+.container h2{
+    color:#5c5cea;
+    font-size:55px;
+    font-family: 'Futura-Bol',sans-serif;
+}
+
+.explain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+.explain-right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.explain-img{
+    width:500px;
+}
+
+.sentence{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    width:500px;
+    height:auto;
+}
+
+.sentence p{
+    font-family: 'Futura-Boo',sans-serif;
+}
+
+.sentence a{
+    display:inline-block;
+    color:#fff;
+    font-size:20px;
+    font-weight: bold;
+    width:180px;
+    line-height:40px;
+    border-radius:12px;
+    padding:0 50px;
+    margin-top:30px;
+    text-decoration: none;
+    
+}
+
+.left-a {
+    background-color:#5c5cea;
+}
+.right-a{
+    background-color: rgb(228, 188, 114);
+}
+
+
+.courses{
+    background-color: #5bb6e4;
+}
+.bigcourse{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:50px;
+    
+}
+.course{
+    background-color:#fff;
+    height: 330px;
+    width: 250px;
+    border-radius:12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,5%);
+ 
+}
+.course img{
+    height:100px;
+    margin-bottom:50px;
+
+}
+.course p{
+    font-weight: bold;
+    font-family: 'Futura-Boo',sans-serif;
+}
+.course a{
+    display:inline-block;
+    color:#fff;
+    font-size:14px;
+    font-weight: bold;
+    width: 190px;
+    line-height:40px;
+    border-radius:12px;
+    padding:0 30px;
+    margin-top:30px;
+    text-decoration: none; 
+}
+
+
+.course-html{
+    background-color:#e36147 ;
+}
+.course-css{
+    background-color:#5bb6e4 ;
+}
+.course-unity{
+    background-color:#252423 ;
+}
+.course-ruby{
+    background-color:#e44f4f ;
+}
+.course-js{
+    background-color:#dfca64 ;
+}
+.course-swift{
+    background-color:#df6844 ;
+}
+.course-go{
+    background-color:#76f8fd ;
+}
+
+.slide-items{
+    width:100%;
+    display:flex;
+    max-width: 1600px;
+    margin-top:50px;
+}
+
+.slide-items li{
+    height:auto;
+}
+
+.slide-items img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.slick-prev:before,
+.slick-next::before{
+    color:black;
+}
+
+.slick-dots li button:before{
+    font-size:18px;
+    top:6px;
+}
+
+.container iframe{
+    margin-top:50px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:0;
+    font-size:14px;
+    color: #5c5cea;
+    margin-bottom:25px;
+}

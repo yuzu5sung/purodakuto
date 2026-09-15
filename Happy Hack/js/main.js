@@ -11,6 +11,19 @@ $(function ($) {
     loop: true,
   });
 
+  $(window).scroll(function () {
+    $(".fadein").each(function () {
+      var targetElement = $(".fadein").offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > targetElement - windowHeight + 200) {
+        $(".fadein").css("opacity", "1");
+        $(".fadein").css("transform", "translateY(0)");
+        $(this).addClass("scroll-in");
+      }
+    });
+  });
+
   $(".slide-items").slick({
     autoplay: false,
     slidesToShow: 4,

@@ -11,17 +11,20 @@ $(function ($) {
     loop: true,
   });
 
-  $(window).scroll(function () {
-    $(".fadein").each(function () {
-      var targetElement = $(".fadein").offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > targetElement - windowHeight + 200) {
-        $(".fadein").css("opacity", "1");
-        $(".fadein").css("transform", "translateY(0)");
-        $(this).addClass("scroll-in");
-      }
-    });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("scroll-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -10px 0px" },
+  );
+
+  document.querySelectorAll(".fadein").forEach((section) => {
+    observer.observe(section);
   });
 
   $(".slide-items").slick({

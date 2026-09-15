@@ -23,13 +23,11 @@ html {
 
 .fadein {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s;
+  transition: all 2s;
 }
 
-.fadein.scroll-in{
-  opacity:1;
-  transform:translateY(0);
+.fadein.scroll-in {
+  opacity: 1;
 }
 .navigation {
   position: absolute;
